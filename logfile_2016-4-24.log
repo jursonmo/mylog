@@ -1,0 +1,7 @@
+2018/06/02 10:08:13 mylog.go:206: next day =2018-06-03 00:00:01 +0800 CST 
+2018/06/02 10:08:13 mylog_test.go:48: [module1 Info 0] test log1
+2018/06/02 10:08:13 mylog_test.go:49: [module2 Info 1] test log2
+2018/06/02 10:08:13 mylog_test.go:57: [module1 Notice 2] test level, can write to log  
+2018/06/02 10:08:13 mylog.go:130: ---------SetLogLevel=warn-------------
+2018/06/02 10:08:13 mylog_test.go:67: [module1 Warning 3] test level, must write to log 
+2018/06/02 10:08:13 mylog_test.go:68: [module2 Warning 4] test level, must write to log  
