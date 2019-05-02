@@ -242,6 +242,10 @@ func Warning(format string, a ...interface{}) {
 	putToLog(LWARNING, "Warning", format, a...)
 }
 
+func Warn(format string, a ...interface{}) {
+	putToLog(LWARNING, "Warn", format, a...)
+}
+
 func Error(format string, a ...interface{}) {
 	putToLog(LERROR, "Error", format, a...)
 }
@@ -273,6 +277,12 @@ func (logModule *logModuleInfo) Notice(format string, a ...interface{}) {
 func (logModule *logModuleInfo) Warning(format string, a ...interface{}) {
 	if logModule.logLevel <= LWARNING {
 		putToLog(LWARNING, logModule.moduleName+" Warning", format, a...)
+	}
+}
+
+func (logModule *logModuleInfo) Warn(format string, a ...interface{}) {
+	if logModule.logLevel <= LWARNING {
+		putToLog(LWARNING, logModule.moduleName+" Warn", format, a...)
 	}
 }
 
